@@ -17,6 +17,11 @@ async def send_welcome(message):
     await bot.reply_to(message, text)
 
 
+@bot.message_handler(commands=['info'])
+async def send_info(message):
+    await bot.reply_to(message, message.chat)
+
+
 # Handle all other messages with content_type 'text' (content_types defaults to ['text'])
 @bot.message_handler(func=lambda message: True)
 async def echo_message(message):
