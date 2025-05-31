@@ -7,7 +7,7 @@ import os
 
 from telebot.async_telebot import AsyncTeleBot
 
-bot = AsyncTeleBot(os.environ["NEON_BOT_TOKEN"])
+bot = AsyncTeleBot(os.environ["MEPEH_BOT_TOKEN"])
 
 
 # Handle '/start' and '/help'
